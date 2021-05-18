@@ -44,7 +44,7 @@ function GitHubUserSummary({username}: Props) {
             <h4>UserName: {userInfo?.login}</h4>
             <img src={userInfo?.avatar_url} alt="profilepic" />
             <p> 
-                View their GitHub 
+                View their GitHub: 
                  <a href={userInfo?.html_url}>{userInfo?.html_url}</a>
             </p>
             <div className="RepositoryContainer">
@@ -55,7 +55,7 @@ function GitHubUserSummary({username}: Props) {
                 <p key={index}> {repo.html_url} </p>
                 <p key={index}> {repo.description} </p>
                 <p key={index}> {repo.language} </p>
-                <p > {index} </p>
+                <p key={index}> {repo.pushed_at} </p>
                 </>
                 )}
             </div>

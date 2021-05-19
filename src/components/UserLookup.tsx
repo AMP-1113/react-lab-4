@@ -8,8 +8,8 @@ import './UserLookup.css'
 
 function UserLookUp() {
     const [ selectedUserName, setSelectedUserName ] = useState("");
+    // make second state
     
-
     // function handleSubmit(e:FormEvent) {
     //     e.preventDefault();
 
